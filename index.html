@@ -1,293 +1,289 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tống Tuệ Mẫn - Content Creator & Social Media Executive Portfolio</title>
-    <style>
-        :root {
-            --primary-color: #2c3e50;
-            --accent-color: #e74c3c;
-            --bg-color: #f8f9fa;
-            --card-bg: #ffffff;
-            --text-color: #333333;
-            --text-muted: #666666;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        header {
-            background: var(--card-bg);
-            padding: 40px 20px;
-            text-align: center;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-            margin-bottom: 25px;
-        }
-
-        header h1 {
-            font-size: 2.2rem;
-            color: var(--primary-color);
-            margin-bottom: 5px;
-            letter-spacing: 1px;
-        }
-
-        header h2 {
-            font-size: 1.1rem;
-            color: var(--accent-color);
-            font-weight: 600;
-            text-transform: uppercase;
-            margin-bottom: 15px;
-        }
-
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            font-size: 0.95rem;
-            color: var(--text-muted);
-        }
-
-        .contact-info a {
-            color: var(--primary-color);
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .contact-info a:hover {
-            color: var(--accent-color);
-        }
-
-        section {
-            background: var(--card-bg);
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-            margin-bottom: 25px;
-        }
-
-        .section-title {
-            font-size: 1.3rem;
-            color: var(--primary-color);
-            border-bottom: 2px solid var(--accent-color);
-            padding-bottom: 8px;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-        }
-
-        .timeline-item, .project-item {
-            margin-bottom: 20px;
-            padding-bottom: 15px;
-            border-bottom: 1px dashed #e0e0e0;
-        }
-
-        .timeline-item:last-child, .project-item:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
-
-        .job-header, .project-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            flex-wrap: wrap;
-            margin-bottom: 8px;
-        }
-
-        .job-title {
-            font-size: 1.1rem;
-            font-weight: bold;
-            color: var(--primary-color);
-        }
-
-        .company-name {
-            font-weight: 600;
-            color: var(--accent-color);
-        }
-
-        .date-range {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            font-style: italic;
-        }
-
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
-            color: var(--text-color);
-        }
-
-        li {
-            margin-bottom: 6px;
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 15px;
-        }
-
-        .skill-category {
-            background: #fdfdfd;
-            border: 1px solid #eef0f2;
-            padding: 15px;
-            border-radius: 8px;
-        }
-
-        .skill-category strong {
-            color: var(--primary-color);
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: var(--text-muted);
-            font-size: 0.9rem;
-        }
-
-        @media (max-width: 600px) {
-            .job-header, .project-header {
-                flex-direction: column;
-            }
-            .date-range {
-                margin-top: 2px;
+    <title>Tống Tuệ Mẫn - Content Creator Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2c3e50',
+                        accent: '#e74c3c',
+                    }
+                }
             }
         }
-    </style>
+    </script>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
 
-    <div class="container">
-        
-        <header>
-            <h1>TỐNG TUỆ MẪN</h1>
-            <h2>Content Creator / Social Media Executive</h2>
-            <div class="contact-info">
-                <span>Phone: <a href="tel:+84387424535">+84 387 424 535</a></span>
-                <span>Email: <a href="mailto:tongtueman886@gmail.com">tongtueman886@gmail.com</a></span>
-            </div>
-        </header>
-
-        <section id="about">
-            <h3 class="section-title">About Me</h3>
-            <p>Content Creator với hơn 1 năm kinh nghiệm sáng tạo nội dung thuộc các lĩnh vực làm đẹp (beauty), nội thất và dịch vụ[cite: 4]. Có năng lực phát triển nội dung đa nền tảng, sản xuất video ngắn, livestream và phối hợp cùng team thực thi các chiến dịch truyền thông nhằm gia tăng mức độ nhận diện thương hiệu cũng như chỉ số tương tác[cite: 5].</p>
-        </section>
-
-        <section id="experience">
-            <h3 class="section-title">Work Experience</h3>
+    <!-- Header / Navbar -->
+    <header class="fixed w-full top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-red-500 tracking-wider">
+                &lt;Tuệ Mẫn /&gt;
+            </a>
             
-            <div class="timeline-item">
-                <div class="job-header">
-                    <div>
-                        <span class="job-title">Content Production Team Leader</span> - 
-                        <span class="company-name">Khánh Vy Home</span>
+            <nav class="hidden md:flex space-x-8 font-medium">
+                <a href="#about" class="hover:text-red-500 transition-colors">Về tôi</a>
+                <a href="#experience" class="hover:text-red-500 transition-colors">Kinh nghiệm</a>
+                <a href="#projects" class="hover:text-red-500 transition-colors">Dự án</a>
+                <a href="#skills" class="hover:text-red-500 transition-colors">Kỹ năng</a>
+                <a href="#education" class="hover:text-red-500 transition-colors">Học vấn</a>
+            </nav>
+
+            <button id="theme-toggle" class="p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200">
+                <i class="fa-solid fa-moon dark:hidden"></i>
+                <i class="fa-solid fa-sun hidden dark:block"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center pt-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="mb-6 relative inline-block">
+                <div class="w-36 h-36 rounded-full mx-auto border-4 border-red-500 shadow-lg bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-4xl font-bold text-red-500">
+                    TTM
+                </div>
+                <span class="absolute bottom-2 right-2 w-5 h-5 bg-green-500 border-2 border-white rounded-full"></span>
+            </div>
+            
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4">
+                TỐNG TUỆ MẪN
+            </h1>
+            
+            <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 font-light">
+                Tôi là một <span id="typing-text" class="font-semibold text-red-500"></span>
+            </p>
+
+            <div class="flex justify-center space-x-4">
+                <a href="tel:+84387424535" class="px-6 py-3 bg-red-500 hover:bg-red-600 text-white font-medium rounded-lg shadow-md transition-transform transform hover:-translate-y-1 flex items-center gap-2">
+                    <i class="fa-solid fa-phone"></i> Gọi ngay
+                </a>
+                <a href="mailto:tongtueman886@gmail.com" class="px-6 py-3 border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 font-medium rounded-lg transition-transform transform hover:-translate-y-1 flex items-center gap-2">
+                    <i class="fa-solid fa-envelope"></i> Gửi Email
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white dark:bg-gray-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 border-b-2 border-red-500 w-max mx-auto pb-2">Về Bản Thân</h2>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="space-y-4 text-gray-600 dark:text-gray-300 leading-relaxed">
+                    <p>
+                        Content Creator với hơn 1 năm kinh nghiệm sáng tạo nội dung thuộc các lĩnh vực làm đẹp (beauty), nội thất và dịch vụ.
+                    </p>
+                    <p>
+                        Có năng lực phát triển nội dung đa nền tảng, sản xuất video ngắn, livestream và phối hợp cùng team thực thi các chiến dịch truyền thông nhằm gia tăng mức độ nhận diện thương hiệu cũng như chỉ số tương tác.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-4 text-center">
+                    <div class="p-6 bg-gray-50 dark:bg-gray-700 rounded-xl shadow-sm">
+                        <span class="text-3xl font-bold text-red-500">1+</span>
+                        <p class="text-sm mt-2">Năm kinh nghiệm</p>
                     </div>
-                    <span class="date-range">2025 - 2026</span>
-                </div>
-                <ul>
-                    <li>Xây dựng và sản xuất nội dung cho Facebook, TikTok, YouTube và Website[cite: 12].</li>
-                    <li>Lên ý tưởng, kịch bản video ngắn và phối hợp với đội ngũ Design, Media để triển khai kế hoạch nội dung[cite: 13].</li>
-                    <li>Đảm nhận vai trò Host livestream và MC giới thiệu sản phẩm nội thất, giải pháp vệ sinh[cite: 14].</li>
-                    <li>Theo dõi hiệu suất nội dung, cập nhật xu hướng và tối ưu hóa dựa trên kết quả thực tế. Sản xuất 50+ video ngắn mỗi tháng[cite: 15].</li>
-                    <li>Đạt 10.000+ lượt xem TikTok/tuần, góp phần nâng cao nhận diện thương hiệu[cite: 16].</li>
-                </ul>
-            </div>
-
-            <div class="timeline-item">
-                <div class="job-header">
-                    <div>
-                        <span class="job-title">Content Creator</span> - 
-                        <span class="company-name">Helio International Clinic</span>
+                    <div class="p-6 bg-gray-50 dark:bg-gray-700 rounded-xl shadow-sm">
+                        <span class="text-3xl font-bold text-red-500">50+</span>
+                        <p class="text-sm mt-2">Video ngắn/tháng</p>
                     </div>
-                    <span class="date-range">2026</span>
-                </div>
-                <ul>
-                    <li>Phát triển nội dung cho Facebook, TikTok, Website và YouTube[cite: 19].</li>
-                    <li>Sáng tạo nội dung và kịch bản video về thông tin điều trị, chăm sóc khách hàng và các chiến dịch truyền thông[cite: 20].</li>
-                    <li>Quản lý các kênh mạng xã hội, lập kế hoạch nội dung và làm việc chặt chẽ với team Media[cite: 21].</li>
-                    <li>Sản xuất 144+ bài đăng mạng xã hội mỗi tháng[cite: 22].</li>
-                    <li>Góp phần xây dựng hệ sinh thái nội dung đa nền tảng giúp tăng cường mức độ nhận diện và tương tác thương hiệu[cite: 23].</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="projects">
-            <h3 class="section-title">Projects</h3>
-            <div class="project-item">
-                <div class="project-header">
-                    <div>
-                        <span class="job-title">BÍBE.STORE - Fashion E-Commerce Project</span>
+                    <div class="p-6 bg-gray-50 dark:bg-gray-700 rounded-xl shadow-sm">
+                        <span class="text-3xl font-bold text-red-500">144+</span>
+                        <p class="text-sm mt-2">Bài đăng social/tháng</p>
                     </div>
-                    <span class="date-range">2025</span>
-                </div>
-                <p><strong>Vai trò:</strong> E-commerce Project Manager [cite: 31]</p>
-                <ul>
-                    <li>Xây dựng chiến lược thương hiệu, định hướng nội dung và vận hành kinh doanh trên Shopee và TikTok Shop[cite: 32].</li>
-                    <li>Đạt tổng doanh thu hơn 150 triệu VNĐ thông qua hoạt động vận hành thương mại điện tử[cite: 33].</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="skills">
-            <h3 class="section-title">Professional Skills</h3>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <strong>Content Strategy & Planning</strong>
-                    Google Sheets, Google Trends, TikTok Creative Center [cite: 25]
-                </div>
-                <div class="skill-category">
-                    <strong>Social Media Management</strong>
-                    Meta Business Suite, TikTok Studio, YouTube Studio [cite: 26]
-                </div>
-                <div class="skill-category">
-                    <strong>Copywriting & AI Tools</strong>
-                    Google Docs, ChatGPT, Gemini [cite: 26]
-                </div>
-                <div class="skill-category">
-                    <strong>Video Editing & Softwares</strong>
-                    CapCut, Canva [cite: 27]
-                </div>
-                <div class="skill-category">
-                    <strong>Public Speaking</strong>
-                    Livestreaming & MC [cite: 28]
+                    <div class="p-6 bg-gray-50 dark:bg-gray-700 rounded-xl shadow-sm">
+                        <span class="text-3xl font-bold text-red-500">150M+</span>
+                        <p class="text-sm mt-2">Doanh thu E-Commerce</p>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="education">
-            <h3 class="section-title">Education & Certifications</h3>
-            <ul>
-                <li><strong>Trường Đại học Công nghiệp TP.HCM (IUH)</strong> | 2021 - 2025 [cite: 35]</li>
-                <li><strong>Chứng chỉ Tiếng Anh:</strong> TOEIC 570 (2025) [cite: 36]</li>
-            </ul>
-        </section>
+    <!-- Experience Section -->
+    <section id="experience" class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 border-b-2 border-red-500 w-max mx-auto pb-2">Kinh Nghiệm Làm Việc</h2>
+            <div class="space-y-8">
+                <!-- Job 1 -->
+                <div class="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md border-l-4 border-red-500">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold">Content Production Team Leader</h3>
+                            <span class="text-red-500 font-semibold">Khánh Vy Home</span>
+                        </div>
+                        <span class="text-sm text-gray-500 dark:text-gray-400 italic">2025 - 2026</span>
+                    </div>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300">
+                        <li>Xây dựng và sản xuất nội dung cho Facebook, TikTok, YouTube và Website.</li>
+                        <li>Lên ý tưởng, kịch bản video ngắn và phối hợp với đội ngũ Design, Media để triển khai kế hoạch nội dung.</li>
+                        <li>Đảm nhận vai trò Host livestream và MC giới thiệu sản phẩm nội thất, giải pháp vệ sinh.</li>
+                        <li>Theo dõi hiệu suất nội dung, cập nhật xu hướng và tối ưu hóa dựa trên kết quả thực tế. Sản xuất 50+ video ngắn mỗi tháng.</li>
+                        <li>Đạt 10.000+ lượt xem TikTok/tuần, góp phần nâng cao nhận diện thương hiệu.</li>
+                    </ul>
+                </div>
 
-    </div>
+                <!-- Job 2 -->
+                <div class="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md border-l-4 border-red-500">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold">Content Creator</h3>
+                            <span class="text-red-500 font-semibold">Helio International Clinic</span>
+                        </div>
+                        <span class="text-sm text-gray-500 dark:text-gray-400 italic">2026</span>
+                    </div>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300">
+                        <li>Phát triển nội dung cho Facebook, TikTok, Website và YouTube.</li>
+                        <li>Sáng tạo nội dung và kịch bản video về thông tin điều trị, chăm sóc khách hàng và các chiến dịch truyền thông.</li>
+                        <li>Quản lý các kênh mạng xã hội, lập kế hoạch nội dung và làm việc chặt chẽ với team Media.</li>
+                        <li>Sản xuất 144+ bài đăng mạng xã hội mỗi tháng.</li>
+                        <li>Góp phần xây dựng hệ sinh thái nội dung đa nền tảng giúp tăng cường mức độ nhận diện và tương tác thương hiệu.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2026 Tống Tuệ Mẫn. All rights reserved.</p>
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white dark:bg-gray-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 border-b-2 border-red-500 w-max mx-auto pb-2">Dự Án Nổi Bật</h2>
+            <div class="grid md:grid-cols-1 gap-8 max-w-2xl mx-auto">
+                <div class="bg-gray-50 dark:bg-gray-700 rounded-xl p-6 shadow-md border border-gray-100 dark:border-gray-600">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-xl font-bold">BÍBE.STORE - Fashion E-Commerce Project</h3>
+                        <span class="text-sm text-gray-500 dark:text-gray-400 italic">2025</span>
+                    </div>
+                    <p class="text-red-500 font-semibold mb-3">Vai trò: E-commerce Project Manager</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300">
+                        <li>Xây dựng chiến lược thương hiệu, định hướng nội dung và vận hành kinh doanh trên Shopee và TikTok Shop.</li>
+                        <li>Đạt tổng doanh thu hơn 150 triệu VNĐ thông qua hoạt động vận hành thương mại điện tử.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 border-b-2 border-red-500 w-max mx-auto pb-2">Kỹ Năng Chuyên Môn</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md">
+                    <i class="fa-solid fa-lightbulb text-3xl text-red-500 mb-3"></i>
+                    <h3 class="font-bold mb-2">Content Strategy & Planning</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-300">Google Sheets, Google Trends, TikTok Creative Center</p>
+                </div>
+                <div class="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md">
+                    <i class="fa-solid fa-share-nodes text-3xl text-red-500 mb-3"></i>
+                    <h3 class="font-bold mb-2">Social Media Management</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-300">Meta Business Suite, TikTok Studio, YouTube Studio</p>
+                </div>
+                <div class="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md">
+                    <i class="fa-solid fa-pen-nib text-3xl text-red-500 mb-3"></i>
+                    <h3 class="font-bold mb-2">Copywriting & AI Tools</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-300">Google Docs, ChatGPT, Gemini</p>
+                </div>
+                <div class="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md">
+                    <i class="fa-solid fa-video text-3xl text-red-500 mb-3"></i>
+                    <h3 class="font-bold mb-2">Video Editing & Softwares</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-300">CapCut, Canva</p>
+                </div>
+                <div class="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md col-span-1 md:col-span-2">
+                    <i class="fa-solid fa-microphone text-3xl text-red-500 mb-3"></i>
+                    <h3 class="font-bold mb-2">Public Speaking</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-300">Livestreaming & MC giới thiệu sản phẩm</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-white dark:bg-gray-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 border-b-2 border-red-500 w-max mx-auto pb-2">Học Vấn & Chứng Chỉ</h2>
+            <div class="max-w-2xl mx-auto space-y-4">
+                <div class="p-4 bg-gray-50 dark:bg-gray-700 rounded-lg flex justify-between items-center">
+                    <div>
+                        <h3 class="font-bold">Trường Đại học Công nghiệp TP.HCM (IUH)</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-300">Sinh viên / Cử nhân</p>
+                    </div>
+                    <span class="text-sm text-gray-500 dark:text-gray-400 italic">2021 - 2025</span>
+                </div>
+                <div class="p-4 bg-gray-50 dark:bg-gray-700 rounded-lg flex justify-between items-center">
+                    <div>
+                        <h3 class="font-bold">Chứng chỉ Tiếng Anh: TOEIC 570</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-300">Tiếng Anh thương mại & giao tiếp</p>
+                    </div>
+                    <span class="text-sm text-gray-500 dark:text-gray-400 italic">2025</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 text-center border-t border-gray-200 dark:border-gray-800 text-sm text-gray-500">
+        <p>© 2026 Tống Tuệ Mẫn. All rights reserved.</p>
     </footer>
 
+    <!-- Script JavaScript -->
+    <script>
+        // Toggle Dark / Light Mode
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        themeToggleBtn.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+        });
+
+        // Typing Effect
+        const words = ["Content Creator", "Social Media Executive", "Livestream Host / MC"];
+        let i = 0;
+        let timer;
+
+        function typingEffect() {
+            let word = words[i].split("");
+            var loopTyping = function() {
+                if (word.length > 0) {
+                    document.getElementById('typing-text').innerHTML += word.shift();
+                } else {
+                    setTimeout(deletingEffect, 2000);
+                    return false;
+                }
+                timer = setTimeout(loopTyping, 100);
+            };
+            loopTyping();
+        }
+
+        function deletingEffect() {
+            let word = words[i].split("");
+            var loopDeleting = function() {
+                if (word.length > 0) {
+                    word.pop();
+                    document.getElementById('typing-text').innerHTML = word.join("");
+                } else {
+                    if (words.length > (i + 1)) {
+                        i++;
+                    } else {
+                        i = 0;
+                    }
+                    setTimeout(typingEffect, 500);
+                    return false;
+                }
+                timer = setTimeout(loopDeleting, 50);
+            };
+            loopDeleting();
+        }
+
+        typingEffect();
+    </script>
 </body>
 </html>
