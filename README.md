@@ -14,51 +14,76 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-# Hi there, I'm [Tên của bạn] 👋
+# 👨‍💻 Nguyễn Văn A | Portfolio
 
-A passionate **[Nghề nghiệp/Lĩnh vực, ví dụ: Full Stack Developer]** from Vietnam 🇻🇳
-
----
-
-### 👨‍💻 About Me
-- 🔭 I’m currently working on **[Tên dự án hoặc công ty]**
-- 🌱 I’m currently learning **[Công nghệ/Kỹ năng đang học, ví dụ: React, Go, Docker]**
-- 👯 I’m looking to collaborate on **Open Source Projects**
-- 💬 Ask me about **[Thế mạnh chuyên môn, ví dụ: JavaScript, Python, Web Development]**
-- 📬 How to reach me: **[Email của bạn]**
+<p align="center">
+  <a href="https://your-portfolio-website.com"><b>🌐 Website Personal</b></a> •
+  <a href="mailto:email@example.com"><b>📧 Email Me</b></a> •
+  <a href="https://linkedin.com/in/yourprofile"><b>💼 LinkedIn</b></a>
+</p>
 
 ---
 
-### 🛠️ Tech Stack & Tools
+## 🚀 About Me
 
-**Languages:**
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+Xin chào! Tôi là một **Full Stack Developer** apasionado về việc xây dựng các ứng dụng web tối ưu và trải nghiệm người dùng mượt mà.
 
-**Frameworks & Libraries:**
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![NodeJS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
-
-**Tools & Databases:**
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
+- 🔭 **Hiện tại:** Đang phát triển các giải pháp Web App & Microservices.
+- 🌱 **Đang học hỏi:** Cloud Architecture (AWS), DevOps & System Design.
+- 🎯 **Mục tiêu:** Trở thành Senior Solution Architect.
+- 💡 **Sở thích:** Mã nguồn mở, chia sẻ kiến thức công nghệ & chạy bộ.
 
 ---
 
-### 📊 GitHub Stats
+## 🛠️ Tech Stack
 
-![Your GitHub Stats](https://github-readme-stats.vercel.app/api?username=tueman123&show_icons=true&theme=radical)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=tueman123&layout=compact&theme=radical)
+| Lĩnh vực | Công nghệ & Công cụ |
+| :--- | :--- |
+| **Languages** | `JavaScript`, `TypeScript`, `Python`, `HTML5/CSS3` |
+| **Frontend** | `React`, `Next.js`, `Tailwind CSS`, `Redux Toolkit` |
+| **Backend** | `Node.js`, `Express.js`, `Nested.js`, `Python (FastAPI)` |
+| **Database** | `PostgreSQL`, `MongoDB`, `Redis` |
+| **DevOps & Tools** | `Docker`, `Git`, `GitHub Actions`, `AWS` |
 
 ---
 
-### 🌐 Connect with Me
+## 📌 Featured Projects
 
-[<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />](https://linkedin.com/in/your-profile)
-[<img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" />](https://facebook.com/your-profile)
-[<img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white" />](https://your-website.com)
+### 🛍️ [E-Commerce Platform](https://github.com/tueman123/project-1)
+> Hệ thống thương mại điện tử tích hợp thanh toán trực tuyến và quản lý kho hàng.
+- **Tech stack:** React, Node.js, MongoDB, Stripe API.
+- **Tính năng nổi bật:** Xử lý đơn hàng thời gian thực, dashboard quản trị tối ưu.
+
+### 💬 [Real-time Chat App](https://github.com/tueman123/project-2)
+> Ứng dụng trò chuyện nhóm theo thời gian thực với mã hóa tin nhắn.
+- **Tech stack:** Next.js, Socket.io, Tailwind CSS, Redis.
+- **Tính năng nổi bật:** Gọi video 1-1, gửi tệp nhanh, lưu trữ tin nhắn tạm.
+
+---
+
+## 📊 GitHub Statistics
+
+<p align="center">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=tueman123&show_icons=true&theme=tokyonight&hide_border=true" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=tueman123&layout=compact&theme=tokyonight&hide_border=true" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=tueman123&theme=tokyonight&hide_border=true" />
+</p>
+
+---
+
+## 🤝 Connect & Socials
+
+<p align="left">
+  <a href="https://linkedin.com/in/yourprofile" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="https://facebook.com/yourprofile" target="_blank">
+    <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" />
+  </a>
+  <a href="mailto:email@example.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+</p>
