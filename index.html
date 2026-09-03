@@ -24,25 +24,108 @@
 </head>
 <body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
 
- <!-- Logo / Name tag -->
-<a href="#" class="text-2xl font-black bg-gradient-to-r from-red-500 via-rose-500 to-pink-500 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300 drop-shadow-sm">
-  Tuệ Mẩn
-</a> 
-            
-            <nav class="hidden md:flex space-x-8 font-medium">
-                <a href="#about" class="hover:text-red-500 transition-colors">Về tôi</a>
-                <a href="#experience" class="hover:text-red-500 transition-colors">Kinh nghiệm</a>
-                <a href="#projects" class="hover:text-red-500 transition-colors">Dự án</a>
-                <a href="#skills" class="hover:text-red-500 transition-colors">Kỹ năng</a>
-                <a href="#education" class="hover:text-red-500 transition-colors">Học vấn</a>
-            </nav>
+<!-- Header & Hero Section (Đầu trang) -->
+<header class="relative w-full overflow-hidden bg-slate-900 text-white font-sans pt-24 pb-16 md:pt-32 md:pb-24">
+  
+  <!-- Light Effect Background (Hiệu ứng ánh sáng nền) -->
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-96 bg-gradient-to-br from-red-600/20 via-rose-500/10 to-transparent blur-3xl pointer-events-none"></div>
 
-            <button id="theme-toggle" class="p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200">
-                <i class="fa-solid fa-moon dark:hidden"></i>
-                <i class="fa-solid fa-sun hidden dark:block"></i>
-            </button>
+  <!-- Navigation Bar (Thanh điều hướng cố định) -->
+  <nav class="fixed top-0 left-0 w-full bg-slate-900/80 backdrop-blur-md border-b border-slate-800 z-50 transition-all duration-300">
+    <div class="max-w-6xl mx-auto px-4 py-3.5 flex items-center justify-between">
+      <!-- Logo / Name Tag -->
+      <a href="#" class="text-xl font-black bg-gradient-to-r from-red-500 via-rose-400 to-amber-400 bg-clip-text text-transparent hover:scale-105 transition-transform">
+        Tuệ Mẫn.
+      </a>
+
+      <!-- Menu Navigation -->
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#about" class="hover:text-red-400 transition-colors">Về tôi</a>
+        <a href="#experience" class="hover:text-red-400 transition-colors">Kinh nghiệm</a>
+        <a href="#projects" class="hover:text-red-400 transition-colors">Dự án</a>
+        <a href="#skills" class="hover:text-red-400 transition-colors">Kỹ năng</a>
+        <a href="#education" class="hover:text-red-400 transition-colors">Học vấn</a>
+      </div>
+
+      <!-- Action Button -->
+      <a href="https://zalo.me/0387424535" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-red-500 hover:bg-red-600 text-white text-xs font-bold shadow-lg shadow-red-500/25 transition-all hover:scale-105">
+        Liên hệ ngay
+      </a>
+    </div>
+  </nav>
+
+  <!-- Main Hero Content -->
+  <div class="max-w-6xl mx-auto px-4 relative z-10">
+    <div class="flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
+      
+      <!-- Left Content: Giới thiệu & Tiêu đề -->
+      <div class="flex-1 text-center lg:text-left">
+        
+        <!-- Badge: Sẵn sàng nhận việc -->
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 text-xs font-semibold text-slate-300 mb-6">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span>Sẵn sàng nhận vị trí công việc mới</span>
         </div>
-    </header>
+
+        <!-- Headline chính -->
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-tight mb-4">
+          Xin chào, tôi là <br class="hidden sm:inline" />
+          <span class="bg-gradient-to-r from-red-500 via-rose-400 to-amber-400 bg-clip-text text-transparent">
+            Tống Tuệ Mẫn
+          </span>
+        </h1>
+
+        <!-- Subheading / Vị trí chuyên môn -->
+        <p class="text-lg sm:text-xl font-medium text-slate-300 mb-4">
+          Content Creator & E-commerce Operations
+        </p>
+
+        <!-- Description tóm tắt -->
+        <p class="text-sm sm:text-base text-slate-400 max-w-xl mx-auto lg:mx-0 leading-relaxed mb-8">
+          Chuyên gia sáng tạo nội dung đa nền tảng (TikTok, Facebook, YouTube) và vận hành kinh doanh sàn TMĐT. Kết hợp giữa tư duy truyền thông y tế / thời trang và chiến lược tối ưu doanh thu thực tế.
+        </p>
+
+        <!-- Action Buttons & Social Icons -->
+        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+          <a href="https://zalo.me/0387424535" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-7 py-3.5 rounded-2xl bg-gradient-to-r from-red-500 to-rose-600 hover:from-red-600 hover:to-rose-700 text-white font-bold text-sm shadow-xl shadow-red-500/20 transition-all hover:scale-105 flex items-center justify-center gap-2">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span>Kết nối qua Zalo</span>
+          </a>
+
+          <a href="#projects" class="w-full sm:w-auto px-7 py-3.5 rounded-2xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 font-bold text-sm transition-all hover:scale-105 flex items-center justify-center gap-2">
+            <span>Xem các dự án</span>
+            <i class="fa-solid fa-arrow-down"></i>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Right Content: Avatar / Ảnh đại diện -->
+      <div class="relative shrink-0">
+        <!-- Vòng hào quang phát sáng phía sau -->
+        <div class="absolute -inset-1.5 bg-gradient-to-r from-red-500 via-rose-500 to-amber-400 rounded-full blur-lg opacity-70 animate-pulse"></div>
+        
+        <!-- Khung ảnh đại diện chính -->
+        <div class="relative w-48 h-48 sm:w-64 sm:h-64 rounded-full p-1.5 bg-slate-900 overflow-hidden shadow-2xl">
+          <!-- Lưu ý: Thay đường dẫn ảnh cá nhân vào src dưới đây -->
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Tống Tuệ Mẫn Avatar" class="w-full h-full object-cover rounded-full">
+        </div>
+
+        <!-- Floating Badge góc ảnh -->
+        <div class="absolute -bottom-2 -right-2 bg-slate-800/90 backdrop-blur-md border border-slate-700 p-3 rounded-2xl shadow-xl flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-red-500/20 text-red-400 flex items-center justify-center text-lg font-bold">
+            <i class="fa-solid fa-rocket"></i>
+          </div>
+          <div class="text-left pr-2">
+            <div class="text-[11px] font-semibold text-slate-400">Kinh nghiệm</div>
+            <div class="text-sm font-black text-white">144+ Bài/tháng</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</header>
 
  <!-- Phần Avt -->
 <section class="min-h-screen flex items-center justify-center pt-20 px-4">
@@ -463,41 +546,7 @@
   </div>
 </section>
 
-    <!-- Phần kỹ năng chuyên môn -->
-    <section id="skills" class="py-20">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12 border-b-2 border-red-500 w-max mx-auto pb-2">Kỹ Năng Chuyên Môn</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md">
-                    <i class="fa-solid fa-lightbulb text-3xl text-red-500 mb-3"></i>
-                    <h3 class="font-bold mb-2">Content Strategy & Planning</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-300">Google Sheets, Google Trends, TikTok Creative Center</p>
-                </div>
-                <div class="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md">
-                    <i class="fa-solid fa-share-nodes text-3xl text-red-500 mb-3"></i>
-                    <h3 class="font-bold mb-2">Social Media Management</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-300">Meta Business Suite, TikTok Studio, YouTube Studio</p>
-                </div>
-                <div class="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md">
-                    <i class="fa-solid fa-pen-nib text-3xl text-red-500 mb-3"></i>
-                    <h3 class="font-bold mb-2">Copywriting & AI Tools</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-300">Google Docs, ChatGPT, Gemini</p>
-                </div>
-                <div class="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md">
-                    <i class="fa-solid fa-video text-3xl text-red-500 mb-3"></i>
-                    <h3 class="font-bold mb-2">Video Editing & Softwares</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-300">CapCut, Canva</p>
-                </div>
-                <div class="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md col-span-1 md:col-span-2">
-                    <i class="fa-solid fa-microphone text-3xl text-red-500 mb-3"></i>
-                    <h3 class="font-bold mb-2">Public Speaking</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-300">Livestreaming & MC giới thiệu sản phẩm</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <div class="max-w-2xl mx-auto p-6 bg-[#0f172a] text-white rounded-xl shadow-2xl font-sans">
 <!-- Skill Cards Section for Content Creator -->
 <div class="max-w-6xl mx-auto p-6 font-sans">
   <!-- Heading -->
