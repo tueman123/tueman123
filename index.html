@@ -24,12 +24,10 @@
 </head>
 <body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
 
-    <!-- Header / Navbar -->
-    <header class="fixed w-full top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-sm">
-        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-red-500 tracking-wider">
-                &lt;Tuệ Mẩn /&gt;
-            </a>
+ <!-- Logo / Brand Name -->
+<a href="#" class="text-2xl font-black bg-gradient-to-r from-red-500 via-rose-500 to-pink-500 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300 drop-shadow-sm">
+  Tuệ Mẩn
+</a> 
             
             <nav class="hidden md:flex space-x-8 font-medium">
                 <a href="#about" class="hover:text-red-500 transition-colors">Về tôi</a>
@@ -46,35 +44,86 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="min-h-screen flex items-center justify-center pt-20 px-4">
-        <div class="max-w-4xl mx-auto text-center">
-            <div class="mb-6 relative inline-block">
-                <div class="w-36 h-36 rounded-full mx-auto border-4 border-red-500 shadow-lg bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-4xl font-bold text-red-500">
-                    TTM
-                </div>
-                <span class="absolute bottom-2 right-2 w-5 h-5 bg-green-500 border-2 border-white rounded-full"></span>
-            </div>
-            
-            <h1 class="text-4xl md:text-6xl font-extrabold mb-4">
-                TỐNG TUỆ MẨN
-            </h1>
-            
-            <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 font-light">
-                Tôi là một <span id="typing-text" class="font-semibold text-red-500"></span>
-            </p>
+ <!-- Hero Section -->
+<section class="min-h-screen flex items-center justify-center pt-20 px-4">
+  <div class="max-w-4xl mx-auto text-center">
+    <!-- Avatar -->
+    <div class="mb-6 relative inline-block">
+      <div class="w-36 h-36 rounded-full mx-auto border-4 border-red-500 shadow-lg bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-4xl font-bold text-red-500">
+        TTM
+      </div>
+      <span class="absolute bottom-2 right-2 w-5 h-5 bg-green-500 border-2 border-white rounded-full"></span>
+    </div>
 
-            <div class="flex justify-center space-x-4">
-                <a href="tel:+84387424535" class="px-6 py-3 bg-red-500 hover:bg-red-600 text-white font-medium rounded-lg shadow-md transition-transform transform hover:-translate-y-1 flex items-center gap-2">
-                    <i class="fa-solid fa-phone"></i> Gọi ngay
-                </a>
-                <a href="mailto:tongtueman886@gmail.com" class="px-6 py-3 border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 font-medium rounded-lg transition-transform transform hover:-translate-y-1 flex items-center gap-2">
-                    <i class="fa-solid fa-envelope"></i> Gửi Email
-                </a>
-            </div>
-        </div>
-    </section>
+    <!-- Tên & Chức danh -->
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-3">TỐNG TUỆ MẨN</h1>
+    <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-6">
+      Tôi là một <span id="typed-text" class="text-red-500 font-semibold border-r-2 border-red-500 pr-1 animate-pulse">Content Creator</span>
+    </p>
 
+    <!-- Thông tin liên hệ & Vị trí tìm việc -->
+    <div class="flex flex-wrap justify-center items-center gap-y-2 gap-x-6 text-sm md:text-base text-gray-600 dark:text-gray-300 mb-8 max-w-xl mx-auto">
+      <div class="flex items-center gap-2">
+        <i class="fa-solid fa-location-dot text-red-500"></i>
+        <span>Phường Tân Bình, TPHCM</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <i class="fa-solid fa-briefcase text-red-500"></i>
+        <span class="font-medium bg-red-100 dark:bg-red-900/40 text-red-600 dark:text-red-400 px-2.5 py-0.5 rounded-full text-xs md:text-sm">Full time - In house</span>
+      </div>
+    </div>
+
+    <!-- Nút hành động (CTA) -->
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="tel:+84387424535" class="inline-flex items-center gap-2 bg-red-500 hover:bg-red-600 text-white font-medium px-6 py-3 rounded-lg shadow-md transition-all">
+        <i class="fa-solid fa-phone"></i>
+        <span>Gọi ngay (+84 387 424 535)</span>
+      </a>
+      <a href="mailto:tongtueman886@gmail.com" class="inline-flex items-center gap-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-200 font-medium px-6 py-3 rounded-lg shadow-sm transition-all">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Gửi Email</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Script xử lý chữ chạy (Thêm vào cuối trang trước thẻ </body>) -->
+<script>
+  const words = ["Content Creator", "E-commerce Marketing"];
+  let wordIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+  const typedTextSpan = document.getElementById("typed-text");
+
+  function typeEffect() {
+    const currentWord = words[wordIndex];
+    if (isDeleting) {
+      typedTextSpan.textContent = currentWord.substring(0, charIndex - 1);
+      charIndex--;
+    } else {
+      typedTextSpan.textContent = currentWord.substring(0, charIndex + 1);
+      charIndex++;
+    }
+
+    let typeSpeed = isDeleting ? 80 : 150;
+
+    if (!isDeleting && charIndex === currentWord.length) {
+      typeSpeed = 2000; // Nghỉ 2s khi gõ xong
+      isDeleting = true;
+    } else if (isDeleting && charIndex === 0) {
+      isDeleting = false;
+      wordIndex = (wordIndex + 1) % words.length;
+      typeSpeed = 500;
+    }
+
+    setTimeout(typeEffect, typeSpeed);
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    setTimeout(typeEffect, 1000);
+  });
+</script>
+    
     <!-- About Section -->
     <section id="about" class="py-20 bg-white dark:bg-gray-800">
         <div class="max-w-6xl mx-auto px-4">
@@ -95,7 +144,7 @@
                     </div>
                     <div class="p-6 bg-gray-50 dark:bg-gray-700 rounded-xl shadow-sm">
                         <span class="text-3xl font-bold text-red-500">50+</span>
-                        <p class="text-sm mt-2">Video ngắn/tháng</p>
+                        <p class="text-sm mt-2">Video/tháng</p>
                     </div>
                     <div class="p-6 bg-gray-50 dark:bg-gray-700 rounded-xl shadow-sm">
                         <span class="text-3xl font-bold text-red-500">144+</span>
@@ -111,83 +160,163 @@
     </section>
 
   <!-- Experience Section -->
-<section id="experience" class="py-20">
-  <div class="max-w-6xl mx-auto px-4">
-    <h2 class="text-3xl font-bold text-center mb-12 border-b-2 border-red-500 w-max mx-auto pb-2">Kinh Nghiệm Làm Việc</h2>
-    
-    <div class="space-y-8">
-      <!-- Job 1: Khánh Vy Home -->
-      <div class="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md border-l-4 border-red-500">
-        <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
-          <div>
-            <h3 class="text-xl font-bold">Content Production Team Leader</h3>
-            <span class="text-red-500 font-semibold">Khánh Vy Home</span>
-          </div>
-          <span class="text-sm text-gray-500 dark:text-gray-400 italic">2025 - 2026</span>
-        </div>
-
-        <ul class="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300 mb-6">
-          <li>Xây dựng và sản xuất nội dung cho Facebook, TikTok, YouTube và Website.</li>
-          <li>Lên ý tưởng, kịch bản video ngắn và phối hợp với đội ngũ Design, Media để triển khai kế hoạch nội dung.</li>
-          <li>Đảm nhận vai trò Host livestream và MC giới thiệu sản phẩm nội thất, giải pháp vệ sinh.</li>
-          <li>Theo dõi hiệu suất nội dung, cập nhật xu hướng và tối ưu hóa dựa trên kết quả thực tế. Sản xuất 50+ video ngắn mỗi tháng.</li>
-          <li>Đạt 10.000+ lượt xem TikTok/tuần, góp phần nâng cao nhận diện thương hiệu.</li>
-        </ul>
-
-        <!-- Video YouTube Nổi Bật / Demo -->
-        <div class="mt-4">
-          <h4 class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Video dự án tiêu biểu:</h4>
-          <div class="aspect-video w-full rounded-lg overflow-hidden shadow-sm bg-black">
-            <!-- Thay ID video 'dQw4w9WgXcQ' bằng ID video YouTube của bạn -->
-            <iframe 
-              class="w-full h-full" 
-              src="https://www.youtube.com/embed/QH9vvwPPBS8?si=eucrAMex6eEE2E5o" 
-              title="YouTube video player" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              allowfullscreen>
-            </iframe>
-          </div>
-        </div>
-      </div>
-
-      <!-- Job 2: Helio International Clinic -->
-      <div class="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md border-l-4 border-red-500">
-        <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
-          <div>
-            <h3 class="text-xl font-bold">Content Creator</h3>
-            <span class="text-red-500 font-semibold">Helio International Clinic</span>
-          </div>
-          <span class="text-sm text-gray-500 dark:text-gray-400 italic">2026</span>
-        </div>
-
-        <ul class="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300 mb-6">
-          <li>Phát triển nội dung cho Facebook, TikTok, Website và YouTube.</li>
-          <li>Sáng tạo nội dung và kịch bản video về thông tin điều trị, chăm sóc khách hàng và các chiến dịch truyền thông.</li>
-          <li>Quản lý các kênh mạng xã hội, lập kế hoạch nội dung và làm việc chặt chẽ với team Media.</li>
-          <li>Sản xuất 144+ bài đăng mạng xã hội mỗi tháng.</li>
-          <li>Góp phần xây dựng hệ sinh thái nội dung đa nền tảng giúp tăng cường mức độ nhận diện và tương tác thương hiệu.</li>
-        </ul>
-
-        <!-- Video YouTube Nổi Bật / Demo -->
-        <div class="mt-4">
-          <h4 class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Video dự án tiêu biểu:</h4>
-          <div class="aspect-video w-full rounded-lg overflow-hidden shadow-sm bg-black">
-            <!-- Thay ID video 'dQw4w9WgXcQ' bằng ID video YouTube của bạn -->
-            <iframe 
-              class="w-full h-full" 
-              src="https://www.youtube.com/watch?v=QH9vvwPPBS8&list=RDQH9vvwPPBS8&start_radio=1" 
-              title="YouTube video player" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              allowfullscreen>
-            </iframe>
-          </div>
-        </div>
+<!-- Job Card: Khánh Vy Home -->
+<div class="p-6 md:p-8 bg-white dark:bg-gray-800 rounded-2xl shadow-lg border border-gray-100 dark:border-gray-700/60 hover:shadow-xl transition-all duration-300">
+  
+  <!-- Header: Chức danh & Công ty -->
+  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-6 border-b border-gray-100 dark:border-gray-700 pb-4">
+    <div>
+      <span class="inline-block px-3 py-1 bg-red-100 dark:bg-red-950/50 text-red-600 dark:text-red-400 text-xs font-semibold rounded-full mb-2">
+        Toàn thời gian
+      </span>
+      <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Content Production Team Leader</h3>
+      <div class="flex items-center gap-2 mt-1">
+        <i class="fa-solid fa-building text-red-500 text-sm"></i>
+        <span class="text-red-500 font-bold text-base">Khánh Vy Home</span>
       </div>
     </div>
+    
+    <div class="flex items-center gap-2 text-sm font-medium text-gray-500 dark:text-gray-400 bg-gray-50 dark:bg-gray-700/50 px-3 py-1.5 rounded-lg w-fit h-fit">
+      <i class="fa-regular fa-calendar text-gray-400"></i>
+      <span>2025 - 2026</span>
+    </div>
   </div>
-</section>
+
+  <!-- Key Metrics / Thành tựu nổi bật -->
+  <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
+    <div class="bg-red-50/50 dark:bg-red-900/10 p-3 rounded-xl border border-red-100 dark:border-red-900/30 text-center">
+      <div class="text-xl font-extrabold text-red-500">50+</div>
+      <div class="text-xs text-gray-600 dark:text-gray-400 font-medium mt-0.5">Video/tháng</div>
+    </div>
+    <div class="bg-red-50/50 dark:bg-red-900/10 p-3 rounded-xl border border-red-100 dark:border-red-900/30 text-center">
+      <div class="text-xl font-extrabold text-red-500">10.000+</div>
+      <div class="text-xs text-gray-600 dark:text-gray-400 font-medium mt-0.5">Views TikTok/tuần</div>
+    </div>
+    <div class="col-span-2 sm:col-span-1 bg-red-50/50 dark:bg-red-900/10 p-3 rounded-xl border border-red-100 dark:border-red-900/30 text-center">
+      <div class="text-xl font-extrabold text-red-500">Đa nền tảng</div>
+      <div class="text-xs text-gray-600 dark:text-gray-400 font-medium mt-0.5">FB, TikTok, YT, Web</div>
+    </div>
+  </div>
+
+  <!-- Mô tả chi tiết công việc -->
+  <ul class="space-y-3 text-gray-600 dark:text-gray-300 text-sm md:text-base leading-relaxed mb-6">
+    <li class="flex items-start gap-3">
+      <i class="fa-solid fa-circle-check text-red-500 mt-1 shrink-0"></i>
+      <span><strong>Xây dựng Chiến lược & Định hướng Nội dung:</strong> Thiết lập kế hoạch nội dung tổng thể đa nền tảng (Facebook, TikTok, YouTube, Website), tập trung vào ngành hàng thiết bị nhà bếp, nội thất và giải pháp không gian sống.</span>
+    </li>
+    <li class="flex items-start gap-3">
+      <i class="fa-solid fa-circle-check text-red-500 mt-1 shrink-0"></i>
+      <span><strong>Quản lý & Sản xuất Video:</strong> Lên ý tưởng, viết kịch bản chi tiết và trực tiếp chỉ đạo đội ngũ Media/Design sản xuất <strong>50+ video ngắn/tháng</strong>, đảm bảo nhất quán về thông điệp thương hiệu.</span>
+    </li>
+    <li class="flex items-start gap-3">
+      <i class="fa-solid fa-circle-check text-red-500 mt-1 shrink-0"></i>
+      <span><strong>Trực tiếp Dẫn dắt Content & Livestream:</strong> Đảm nhận vai trò Host/MC truyền tải hình ảnh chuyên nghiệp trong các buổi Livestream bán hàng và Video review giới thiệu tính năng sản phẩm cao cấp.</span>
+    </li>
+    <li class="flex items-start gap-3">
+      <i class="fa-solid fa-circle-check text-red-500 mt-1 shrink-0"></i>
+      <span><strong>Tối ưu Performance & Xu hướng:</strong> Theo dõi các chỉ số đo lường hiệu suất (Reach, Engagement, Conversion), liên tục thử nghiệm các format video xu hướng giúp duy trì <strong>10.000+ lượt xem/tuần</strong> trên TikTok.</span>
+    </li>
+  </ul>
+
+  <!-- Tech / Skills Tags -->
+  <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100 dark:border-gray-700">
+    <span class="px-2.5 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-xs font-medium rounded-md">Short-form Video</span>
+    <span class="px-2.5 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-xs font-medium rounded-md">Script Writing</span>
+    <span class="px-2.5 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-xs font-medium rounded-md">Livestream Host</span>
+    <span class="px-2.5 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-xs font-medium rounded-md">Team Management</span>
+  </div>
+
+  <!-- Video dự án tiêu biểu -->
+  <div class="mt-6 pt-6 border-t border-gray-100 dark:border-gray-700">
+    <h4 class="text-sm font-bold text-gray-800 dark:text-gray-200 mb-3 flex items-center gap-2">
+      <i class="fa-brands fa-youtube text-red-500 text-base"></i>
+      <span>Video dự án tiêu biểu:</span>
+    </h4>
+    <div class="aspect-video w-full rounded-xl overflow-hidden shadow-md bg-black">
+      <iframe class="w-full h-full" src="https://www.youtube.com/embed/QH9vvwPPBS8?si=eucrAMex6eEE2E5o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </div>
+
+</div>
+   <!-- Job Card: Helio International Clinic -->
+<div class="p-6 md:p-8 bg-white dark:bg-gray-800 rounded-2xl shadow-lg border border-gray-100 dark:border-gray-700/60 hover:shadow-xl transition-all duration-300">
+  
+  <!-- Header: Chức danh & Công ty -->
+  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-6 border-b border-gray-100 dark:border-gray-700 pb-4">
+    <div>
+      <span class="inline-block px-3 py-1 bg-red-100 dark:bg-red-950/50 text-red-600 dark:text-red-400 text-xs font-semibold rounded-full mb-2">
+        Toàn thời gian
+      </span>
+      <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Content Creator</h3>
+      <div class="flex items-center gap-2 mt-1">
+        <i class="fa-solid fa-hospital text-red-500 text-sm"></i>
+        <span class="text-red-500 font-bold text-base">Helio International Clinic</span>
+      </div>
+    </div>
+    
+    <div class="flex items-center gap-2 text-sm font-medium text-gray-500 dark:text-gray-400 bg-gray-50 dark:bg-gray-700/50 px-3 py-1.5 rounded-lg w-fit h-fit">
+      <i class="fa-regular fa-calendar text-gray-400"></i>
+      <span>2026</span>
+    </div>
+  </div>
+
+  <!-- Key Metrics / Thành tựu nổi bật -->
+  <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
+    <div class="bg-red-50/50 dark:bg-red-900/10 p-3 rounded-xl border border-red-100 dark:border-red-900/30 text-center">
+      <div class="text-xl font-extrabold text-red-500">144+</div>
+      <div class="text-xs text-gray-600 dark:text-gray-400 font-medium mt-0.5">Bài đăng/tháng</div>
+    </div>
+    <div class="bg-red-50/50 dark:bg-red-900/10 p-3 rounded-xl border border-red-100 dark:border-red-900/30 text-center">
+      <div class="text-xl font-extrabold text-red-500">4 Nền tảng</div>
+      <div class="text-xs text-gray-600 dark:text-gray-400 font-medium mt-0.5">FB, TikTok, Web, YT</div>
+    </div>
+    <div class="col-span-2 sm:col-span-1 bg-red-50/50 dark:bg-red-900/10 p-3 rounded-xl border border-red-100 dark:border-red-900/30 text-center">
+      <div class="text-xl font-extrabold text-red-500">Y tế & Y khoa</div>
+      <div class="text-xs text-gray-600 dark:text-gray-400 font-medium mt-0.5">Lĩnh vực nội dung</div>
+    </div>
+  </div>
+
+  <!-- Mô tả chi tiết công việc -->
+  <ul class="space-y-3 text-gray-600 dark:text-gray-300 text-sm md:text-base leading-relaxed mb-6">
+    <li class="flex items-start gap-3">
+      <i class="fa-solid fa-circle-check text-red-500 mt-1 shrink-0"></i>
+      <span><strong>Chiến lược Nội dung Y tế & Dịch vụ:</strong> Lên kế hoạch và phát triển nội dung chuyên sâu đa kênh (Facebook, TikTok, Website, YouTube) tập trung vào thông tin điều trị, kiến thức y khoa và dịch vụ chăm sóc khách hàng.</span>
+    </li>
+    <li class="flex items-start gap-3">
+      <i class="fa-solid fa-circle-check text-red-500 mt-1 shrink-0"></i>
+      <span><strong>Sáng tạo Kịch bản & Truyền thông:</strong> Biên soạn kịch bản video truyền thông chuẩn y khoa, gần gũi với khách hàng và phối hợp chặt chẽ với đội ngũ Media để triển khai hình ảnh chuyên nghiệp.</span>
+    </li>
+    <li class="flex items-start gap-3">
+      <i class="fa-solid fa-circle-check text-red-500 mt-1 shrink-0"></i>
+      <span><strong>Quản lý Kênh & Tối ưu Số lượng:</strong> Quản lý vận hành hàng ngày các kênh mạng xã hội, đảm bảo tiến độ sản xuất và xuất bản đều đặn <strong>144+ bài đăng/tháng</strong>.</span>
+    </li>
+    <li class="flex items-start gap-3">
+      <i class="fa-solid fa-circle-check text-red-500 mt-1 shrink-0"></i>
+      <span><strong>Xây dựng Hệ sinh thái Thương hiệu:</strong> Đóng góp nâng cao nhận diện thương hiệu thẩm mỹ/y tế, thúc đẩy tương tác tự nhiên và chuyển đổi khách hàng tiềm năng.</span>
+    </li>
+  </ul>
+
+  <!-- Tech / Skills Tags -->
+  <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100 dark:border-gray-700">
+    <span class="px-2.5 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-xs font-medium rounded-md">Medical Content</span>
+    <span class="px-2.5 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-xs font-medium rounded-md">Video Script</span>
+    <span class="px-2.5 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-xs font-medium rounded-md">Social Media Management</span>
+    <span class="px-2.5 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-xs font-medium rounded-md">Healthcare Marketing</span>
+  </div>
+
+  <!-- Video dự án tiêu biểu -->
+  <div class="mt-6 pt-6 border-t border-gray-100 dark:border-gray-700">
+    <h4 class="text-sm font-bold text-gray-800 dark:text-gray-200 mb-3 flex items-center gap-2">
+      <i class="fa-brands fa-youtube text-red-500 text-base"></i>
+      <span>Video dự án tiêu biểu:</span>
+    </h4>
+    <div class="aspect-video w-full rounded-xl overflow-hidden shadow-md bg-black">
+      <iframe class="w-full h-full" src="https://www.youtube.com/embed/QH9vvwPPBS8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </div>
+
+</div>
+    
     <!-- Projects Section -->
     <section id="projects" class="py-20 bg-white dark:bg-gray-800">
         <div class="max-w-6xl mx-auto px-4">
